@@ -47,7 +47,7 @@ gulp.task('styles', () => {
 //  };
 //}
 
-function jslint(files, options) {
+function jshint(files, options) {
   return () => {
     return gulp.src(files)
       .pipe(reload({
@@ -66,9 +66,9 @@ const testLintOptions = {
   }
 };
 
-gulp.task('lint', jslint('app/scripts/**/*.js'));
-gulp.task('lint:test', jslint('test/spec/**/*.js', testLintOptions));
-gulp.task('lint:self', jslint(__filename));
+gulp.task('lint', jshint('app/scripts/**/*.js'));
+gulp.task('lint:test', jshint('test/spec/**/*.js', testLintOptions));
+gulp.task('lint:self', jshint(__filename));
 
 gulp.task('html', ['styles'], () => {
   const assets = $.useref.assets({
