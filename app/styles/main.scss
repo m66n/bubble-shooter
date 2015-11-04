@@ -1,0 +1,51 @@
+// bower:scss
+// endbower
+
+$colorPrimary: #0071bc;
+$colorPrimaryAlt: #02bfe7;
+$colorSecondary: #e31c3d;
+$colorWhite: #ffffff;
+$colorBase: #212121;
+
+$pageWidth: 900px;
+$headerBarHeight: 70px;
+$gameHeight: 660px;
+$footerBarHeight: 48px;
+
+#page {
+  margin: 1em auto 0 auto;
+  width: $pageWidth;
+  display: flex;
+  flex-direction: column;
+}
+
+#header-bar {
+  height: $headerBarHeight;
+  background-color: $colorPrimary;
+  color: $colorWhite;
+}
+
+#game {
+  height: $gameHeight;
+  background-color: $colorWhite;
+  color: $colorPrimary;
+}
+
+#footer-bar {
+  height: $footerBarHeight;
+  background-color: $colorPrimary;
+  color: $colorWhite;
+}
+
+body {
+  background: #5b616b;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $colorBase;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
